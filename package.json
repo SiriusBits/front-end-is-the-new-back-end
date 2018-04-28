@@ -1,0 +1,10 @@
+{
+  "name": "front-end-is-the-new-back-end",
+  "version": "1.0.0",
+  "description": "Web presentation of modern front-end tooling and practices.",
+  "main": "index.js",
+  "repository": "https://github.com/SiriusBits/front-end-is-the-new-back-end",
+  "author": "Benjamin Bykowski <benjamin.bykowski@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
