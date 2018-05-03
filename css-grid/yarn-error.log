@@ -1,0 +1,46 @@
+Arguments: 
+  /usr/local/bin/node /usr/local/Cellar/yarn/1.6.0/libexec/bin/yarn.js install
+
+PATH: 
+  /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/bbykowski/.nvm/versions/node/v9.7.1/bin
+
+Yarn version: 
+  1.6.0
+
+Node version: 
+  8.4.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/bbykowski/Documents/Development/projects/frontendisthenewbackend/css-grid/package.json: Unexpected string in JSON at position 180
+      at JSON.parse (<anonymous>)
+      at /usr/local/Cellar/yarn/1.6.0/libexec/lib/cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.6.0/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.6.0/libexec/lib/cli.js:109:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "Griddin",
+    "version": "1.0.0",
+    "description": "css grid example",
+    "main": "index.html",
+    "author": "Benjamin Bykowski",
+    "license": "MIT",
+    "private": false
+    "scripts": {
+      "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox Developer Edition'"
+    },
+    "devDependencies": {
+      "browser-sync": "^2.18.13"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

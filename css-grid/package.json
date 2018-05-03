@@ -1,0 +1,17 @@
+{
+  "name": "Griddin",
+  "version": "1.0.0",
+  "description": "css grid example",
+  "main": "index.html",
+  "author": "Benjamin Bykowski",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser 'Firefox Developer Edition'"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
+  }
+}
+
+

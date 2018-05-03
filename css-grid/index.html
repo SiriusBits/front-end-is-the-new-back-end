@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/global.css">
+    <link rel="stylesheet" href="./main.css">
+    <title>Grid Books</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top">
+            <header class="hero">
+                <h1>Geek Reads</h1>
+                <p>A geek's guide to great reads!</p>
+            </header>
+            <div class="cta cta1">
+                <p class="price">From $3</p>
+                <p>Bundles</p>
+            </div>
+            <div class="cta cta2">
+                <p class="price">$9.99/m</p>
+                <p>Membership</p>
+            </div>
+
+        </div>
+        <nav class="menu">
+            <button aria-expanded="false" aria-controls="menu-list">
+                <span class="open">☰</span>
+                <span class="close">×</span>
+                Menu
+            </button>
+            <ul id="menu-list">
+                <li>
+                    <a href="">Catalogue</a>
+                </li>
+                <li>
+                    <a href="">Member Picks</a>
+                </li>
+                <li>
+                    <a href="">New Arrivals</a>
+                </li>
+                <li>
+                    <a href="">Membership</a>
+                </li>
+                <li>
+                    <a href="">Geek Ledger</a>
+                </li>
+            </ul>
+        </nav>
+
+        <section class="features">
+            <div class="feature">
+                <span class="icon">👍</span>
+                <h3>Recommended</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🌟</span>
+                <h3>Featured</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🎩</span>
+                <h3>Classic</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+            <div class="feature">
+                <span class="icon">🏆</span>
+                <h3>Award Winning</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
+            </div>
+        </section>
+
+        <section class="about">
+            <img src="/assets/am-gods.jpg" alt="American Gods" class="about__mockup">
+            <div class="about__details">
+                <h2>Featured Read - American Gods</h2>
+                <p>On the plane home to attend the funerals of his wife and best friend, Shadow, an ex-con, encounters an enigmatic
+                    stranger who seems to know a lot about him. When Shadow accepts the stranger's job offer, he finds himself
+                    plunged into a perilous game with the highest of stakes: the soul of America itself.</p>
+                <p>A masterpiece by renowned author,
+                    <a href="#">Neil Gaiman</a>
+                </p>
+                <button>Learn More →</button>
+            </div>
+        </section>
+
+
+        <section class="gallery">
+            <h2>Staff Picks</h2>
+            <img src="./assets/artemis.jpg" alt="">
+            <img src="./assets/enders-game.jpg" alt="">
+            <img src="./assets/hh-guide.jpg" alt="">
+            <img src="./assets/hyperion.jpg" alt="">
+            <img src="./assets/martian-chron.jpg" alt="">
+            <img src="./assets/snow-crash.jpg" class="h-book" alt="">
+            <img src="./assets/20k-leauges.jpg" alt="">
+            <img src="./assets/sl-house-5.jpg" alt="">
+            <img src="./assets/small-gods.jpg" alt="">
+            <img src="./assets/thomas-covenant.jpg" alt="">
+            <img src="./assets/wheel-time.jpg" alt="">
+            <img src="./assets/elec-sheep.jpg" alt="">
+            <img src="./assets/gunslinger.jpg" alt="">
+            <img src="./assets/clock-orange.jpg" alt="">
+            <img src="./assets/water-down.jpg" alt="">
+            <img src="./assets/dragon-anne.jpg" alt="">
+            <img src="./assets/canticle-leb.jpg" alt="">
+            <img src="./assets/flowers-algernon.jpg" alt="">
+            <img src="./assets/mist-avalon.jpg" alt="">
+            <img src="./assets/ringworld.jpg" alt="">
+            <img src="./assets/once-future-king.jpg" alt="">
+            <img src="./assets/contact.jpg" alt="">
+            <img src="./assets/stardust.jpg" alt="">
+            <img src="./assets/unicorn.jpg" alt="">
+            <img src="./assets/fire-deep.jpg" alt="">
+            <img src="./assets/outlander.jpg" alt="">
+            <img src="./assets/wicked.jpg" alt="">
+            <img src="./assets/rama.jpg" alt="">
+            <img src="./assets/drizzt.jpg" alt="">
+            <img src="./assets/journey-center.jpg" alt="">
+            <img src="./assets/tt-wife.jpg" alt="">
+        </section>
+    </div>
+
+    <script>
+        const navButton = document.querySelector('button[aria-expanded]');
+
+        function toggleNav({ target }) {
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            navButton.setAttribute('aria-expanded', !expanded);
+        }
+
+        navButton.addEventListener('click', toggleNav);
+
+    </script>
+</body>
+
+</html>
