@@ -12,23 +12,23 @@ img {
   max-width: 100%;
 }
 
-/* .wrapper apply gap, avoid margin madness
+/* .wrapper apply gap, avoid margin madness */
 
 .wrapper {
   display: grid;
   grid-gap: 20px;
-}*/
+}
 
-/* Define the grid template area
+/* Define the grid template area*/
 .top {
   display: grid;
   grid-gap: 20px;
   grid-template-areas:
     "hero hero cta1"
     "hero hero cta2";
-}*/
+}
 
-/* layout with grid, combine with flexbox
+/* layout with grid, combine with flexbox */
 .hero {
   grid-area: hero;
   min-height: 400px;
@@ -46,7 +46,7 @@ img {
   background: var(--cosmos);
   padding: 5px;
 }
-*/
+
 .hero h1 {
   font-size: 6rem;
 }
@@ -58,7 +58,7 @@ img {
 .cta {
   background: var(--cosmos);
 }
-/* Easy alignment
+/* Easy alignment */
 .cta {
   display: grid;
   align-items: center;
@@ -76,14 +76,14 @@ img {
 
 .cta2 {
   grid-area: cta2;
-}*/
+}
 
 .price {
   font-size: 60px;
   font-weight: 300;
 }
 
-/* Navigation
+/* Navigation */
 
 .menu ul {
   display: grid;
@@ -92,7 +92,7 @@ img {
   list-style: none;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
-*/
+
 .menu a {
   background: var(--cosmos);
   display: block;
@@ -108,14 +108,14 @@ img {
   display: none;
 }
 
-/* Features!
+/* Features!*/
 
 .features {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-*/
+
 .feature {
   background: white;
   padding: 10px;
@@ -131,7 +131,7 @@ img {
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* About Section
+/* About Section */
 
 .about {
   background: white;
@@ -141,8 +141,8 @@ img {
   grid-template-columns: 200px 1fr;
   align-items: center;
 }
-*/
-/* Grid with pseudo seletors
+
+/* Grid with pseudo seletors */
 .gallery h2 {
   color: rgb(165, 234, 243);
   grid-column: 1 / -1;
@@ -162,13 +162,13 @@ img {
     var(--cosmos),
     transparent
   );
-}*/
+}
 
 .gallery h2:after {
   --direction: right;
 }
 
-/* Gallery!
+/* Gallery! */
 
 .gallery {
   display: grid;
@@ -184,13 +184,13 @@ img {
 
 .gallery {
   grid-auto-flow: dense;
-}*/
-
-.gallery img {
-  width: 100px;
 }
 
-/* Responsive grid media queries
+.gallery img {
+  width: 100%;
+}
+
+/* Responsive grid media queries */
 @media (max-width: 1000px) {
   .menu {
     order: -1;
@@ -247,4 +247,3 @@ img {
       "cta2";
   }
 }
-*/
