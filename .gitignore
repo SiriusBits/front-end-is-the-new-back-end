@@ -8,5 +8,7 @@ log/*.log
 tmp/**
 node_modules/
 .sass-cache
+.cache/
 /public
 /dist
+*/**/dist
